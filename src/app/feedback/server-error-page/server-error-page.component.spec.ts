@@ -5,7 +5,7 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServerErrorPageComponent } from './server-error-page.component';
 
 
-describe('ErrorPageComponent', () => {
+describe('ServerErrorPageComponent', () => {
 	let comp: ServerErrorPageComponent;
 	let fixture: ComponentFixture<ServerErrorPageComponent>;
 

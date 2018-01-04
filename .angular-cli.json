@@ -21,7 +21,7 @@
 			"styles": [
 				"styles.scss",
 				{ 
-					"input": "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss", 
+					"input": "../node_modules/bootstrap/dist/css/bootstrap.min.css", 
 					"output": "bootstrap.css" 
 				},
 				{

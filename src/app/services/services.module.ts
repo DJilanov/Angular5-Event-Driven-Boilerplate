@@ -1,5 +1,4 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { MessageSocketService } from './message-socket/message-socket.service';
 import { CommonModule } from '@angular/common';
 
 import { throwIfAlreadyLoaded } from '../core/module-import-guard';
@@ -9,7 +8,6 @@ import { throwIfAlreadyLoaded } from '../core/module-import-guard';
         CommonModule
     ],
     providers: [
-        MessageSocketService
     ]
 })
 export class ServicesModule {
