@@ -5,18 +5,14 @@ import { BackendService } from '../core/backend/backend.service';
 import { ErrorHandlerService } from '../core/error-handler/error-handler.service';
 import { EventBusService } from '../core/event-bus/event-bus.service';
 
-const sharredOptions = {
-	profileBtn: true,
-	info: true,
-	hamburgerBtn: true
-};
+const sharredOptions = {};
 
 @Component({
-	selector: 'app-informational-page',
-	templateUrl: './informational-page.component.html',
-	styleUrls: ['./informational-page.component.scss']
+	selector: 'app-docs-page',
+	templateUrl: './docs-page.component.html',
+	styleUrls: ['./docs-page.component.scss']
 })
-export class InformationalPageComponent {
+export class DocsPageComponent {
 
 	constructor(
 		private router: Router,

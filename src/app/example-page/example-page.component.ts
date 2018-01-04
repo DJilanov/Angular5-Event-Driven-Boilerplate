@@ -8,11 +8,11 @@ import { EventBusService } from '../core/event-bus/event-bus.service';
 const sharredOptions = {};
 
 @Component({
-	selector: 'app-contact-page',
-	templateUrl: './contact-page.component.html',
-	styleUrls: ['./contact-page.component.scss']
+	selector: 'app-example-page',
+	templateUrl: './example-page.component.html',
+	styleUrls: ['./example-page.component.scss']
 })
-export class ContactPageComponent {
+export class ExamplePageComponent {
 
 	constructor(
 		private router: Router,

@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HomePageComponent } from './home-page/home-page.component';
+import { ExamplePageComponent } from './example-page/example-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-import { InformationalPageComponent } from './informational-page/informational-page.component';
+import { DocsPageComponent } from './docs-page/docs-page.component';
 import { ServerErrorPageComponent } from './feedback/server-error-page/server-error-page.component';
 
 const routes: Routes = [
@@ -13,15 +15,19 @@ const routes: Routes = [
 	},
 	{
 		path: 'home',
-		component: ContactPageComponent
+		component: HomePageComponent
+	},
+	{
+		path: 'docs',
+		component: DocsPageComponent
+	},
+	{
+		path: 'example',
+		component: ExamplePageComponent
 	},
 	{
 		path: 'contact',
 		component: ContactPageComponent
-	},
-	{
-		path: 'docs',
-		component: InformationalPageComponent
 	},
 	{
 		path: 'server-error',

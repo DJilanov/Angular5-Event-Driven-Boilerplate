@@ -19,11 +19,15 @@
 			"testTsconfig": "tsconfig.spec.json",
 			"prefix": "app",
 			"styles": [
+				"styles.scss",
 				{ 
 					"input": "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss", 
 					"output": "bootstrap.css" 
 				},
-				"styles.scss"
+				{
+					"input": "../node_modules/font-awesome/css/font-awesome.min.css", 
+					"output": "font-awesome.css" 
+				}
 			],
 			"environmentSource": "environments/environment.ts",
 			"environments": {

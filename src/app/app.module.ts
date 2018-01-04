@@ -4,20 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MaterialModule } from './material.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { ServicesModule } from './services/services.module';
 import { FeedbackModule } from './feedback/feedback.module';
 
 import { AppComponent } from './app.component';
+import { DocsPageComponent } from './docs-page/docs-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ExamplePageComponent } from './example-page/example-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-import { InformationalPageComponent } from './informational-page/informational-page.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		ContactPageComponent,
-		InformationalPageComponent
+		DocsPageComponent,
+		HomePageComponent,
+		ExamplePageComponent,
+		ContactPageComponent
 	],
 	imports: [
 		AppRoutingModule,
@@ -25,8 +32,11 @@ import { InformationalPageComponent } from './informational-page/informational-p
 		BrowserAnimationsModule,
 		FormsModule,
 		HttpModule,
+		MaterialModule,
+
 		CoreModule,
 		SharedModule,
+		ServicesModule,
 		FeedbackModule,
 	],
 	providers: [CoreModule],
